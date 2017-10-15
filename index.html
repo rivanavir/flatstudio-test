@@ -8,18 +8,19 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.1/gridlex.min.css">
   <title>Flatstudio</title>
 </head>
 <body>
   <div class="main-wrapper">
     <header class="header">
       <div class="container">
-        <div class="flex-row flex-align-space-between">
-          <div class="flex-cell">
+        <div class="grid-spaceBetween grid-middle grid-noGutter">
+          <div class="col">
             <h1><a class="logo" href="/"><img src="./assets/img/main-logo.png" alt="logo"></a></h1>
           </div>
-          <div class="flex-cell">
-            <button class="menu-button">Menu</button>
+          <div class="col-right">
+            <button class="menu-button"><span>Menu</span></button>
           </div>
         </div>
         <!-- <div class="grid-row">
@@ -34,7 +35,16 @@
     </header>
     <content class="main-content">
       <div class="container">
-        <div class="flex-row flex-align-space-between">
+        <div class="grid-spaceBetween">
+          <div class="col">
+            <h4>Our Story</h4>
+            <h4 class="title-dot">A creative agency built to lift-off modern brands to a new level<span>.</span></h4>
+          </div>
+          <div class="col-right">
+            <a href="#">Our team <span><i class="fa fa-angle-down"></i></span></a>
+          </div>
+        </div>
+        <!-- <div class="flex-row flex-align-space-between">
           <div class="flex-cell">
             <h4>Our Story</h4>
             <h4 class="title-dot">A creative agency built to lift-off modern brands to a new level<span>.</span></h4>
@@ -42,8 +52,8 @@
           <div class="flex-cell">
             <a href="#">Our team <span><i class="fa fa-angle-down"></i></span></a>
           </div>
-        </div>
-        <div class="flex-row">
+        </div> -->
+        <!-- <div class="flex-row">
           <div class="flex-cell flex">
             <p>10</p>
             <span>employers</span>
@@ -63,8 +73,40 @@
             <p>----</p>
             <p>We are one of the leading digital & mobile agencies in Portugal</p>
           </div>
+        </div> -->
+        <div class="grid-noGutter">
+          <div class="col">
+            <p>10</p>
+            <span>employers</span>
+          </div>
+          <div class="col">
+            <p>4</p>
+            <span>years of exprerience</span>
+          </div>
+          <div class="col">
+            <p>----</p>
+            <p>
+              <a href="#">6 certificates won</a><br>
+              Awwwards H.M and SOTD
+            </p>
+          </div>
+          <div class="col">
+            <p>----</p>
+            <p>We are one of the leading digital & mobile agencies in Portugal</p>
+          </div>
         </div>
-        <div class="flex-row">
+        <div class="grid-noGutter">
+          <div class="col">
+            <p>We are a creative agency with first-rate interface design and no-bullshit work ethic. We believe in digital beauty, visionary thinking and design driven by three-dimensional ideas. With people-oriented approach we help your business deliver the best  user experience to your costumers. Flatstudio has what it takes to transform complex problems into simple and elegant design solution. We know everything about design, we´re design.</p>
+            <div class="message-us">
+              <a href="#"><span><i class="fa fa-angle-down"></i></span> Message us</a>
+            </div>
+          </div>
+          <div class="col">
+            <img src="http://placehold.it/620x620/000000/000000" alt="">
+          </div>
+        </div>
+        <!-- <div class="flex-row">
           <div class="flex-cell flex">
             <p>We are a creative agency with first-rate interface design and no-bullshit work ethic. We believe in digital beauty, visionary thinking and design driven by three-dimensional ideas. With people-oriented approach we help your business deliver the best  user experience to your costumers. Flatstudio has what it takes to transform complex problems into simple and elegant design solution. We know everything about design, we´re design.</p>
             <div class="message-us">
@@ -74,12 +116,12 @@
           <div class="flex-cell flex">
             <img src="http://placehold.it/620x620/000000/000000" alt="">
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="grey-color-block">
         <div class="container">
-          <div class="flex-row">
-            <div class="flex-cell flex-80">
+          <div class="grid-noGutter">
+            <div class="col-9">
               <h3>
                 ""<br>
                 This is the best workplace for a creative mind, fortunately this is my job since college.
@@ -87,67 +129,82 @@
               <h6>— Bohdan Kononets, Flatstudio Founder</h6>
             </div>
           </div>
-          <div class="flex-row">
-            <div class="flex-cell flex">
-              <img src="http://placehold.it/281x350" alt="">
+          <div class="grid-noGutter">
+            <div class="col">
+              <img src="http://placehold.it/281x350/fff/fff" alt="">
               <h6>Founder & CEO</h6>
               <p class="name">Bohdan Kononets</p>
             </div>
-            <div class="flex-cell flex">
-              <img src="http://placehold.it/281x350" alt="">
+            <div class="col">
+              <img src="http://placehold.it/281x350/e9eaed/e9eaed" alt="">
               <h6>Interface Designer</h6>
               <p class="name">Manoel Andreis</p>
             </div>
-            <div class="flex-cell flex">
-              <img src="http://placehold.it/281x350" alt="">
+            <div class="col">
+              <img src="http://placehold.it/281x350/fff/fff" alt="">
               <h6>Interface Designer & Motion</h6>
               <p class="name">Slava Moroz</p>
             </div>
-            <div class="flex-cell flex">
-              <img src="http://placehold.it/281x350" alt="">
+            <div class="col">
+              <img src="http://placehold.it/281x350/e9eaed/e9eaed" alt="">
               <h6>Account Manager</h6>
               <p class="name">Kseniia Popkova</p>
             </div>
           </div>
-          <div class="flex-row">
-            <div class="flex-cell flex">
-              <img src="http://placehold.it/281x350" alt="">
+          <div class="grid-noGutter">
+            <div class="col">
+              <img src="http://placehold.it/281x350/fff/fff" alt="">
               <h6>Interface Designer</h6>
               <p class="name">Tiago Almeida</p>
             </div>
-            <div class="flex-cell flex">
-              <img src="http://placehold.it/281x350" alt="">
+            <div class="col">
+              <img src="http://placehold.it/281x350/e9eaed/e9eaed" alt="">
               <h6>Graphic Designer</h6>
               <p class="name">Maria Soloveva</p>
             </div>
-            <div class="flex-cell flex">
-              <img src="http://placehold.it/562x350" alt="">
+            <div class="col-6">
+              <img src="http://placehold.it/562x350/fff/fff" alt="">
             </div>
           </div>
-          <div class="flex-row">
-            <div class="flex-cell flex">
-              <img src="http://placehold.it/281x350" alt="">
+          <!-- <div class="grid-row">
+            <div class="grid-cell">
+              <img src="http://placehold.it/281x350/fff/fff" alt="">
+              <h6>Interface Designer</h6>
+              <p class="name">Tiago Almeida</p>
+            </div>
+            <div class="grid-cell">
+              <img src="http://placehold.it/281x350/e9eaed/e9eaed" alt="">
+              <h6>Graphic Designer</h6>
+              <p class="name">Maria Soloveva</p>
+            </div>
+            <div class="grid-cell">
+              <img src="http://placehold.it/562x350/fff/fff" alt="">
+            </div>
+          </div> -->
+          <div class="grid-noGutter">
+            <div class="col">
+              <img src="http://placehold.it/281x350/fff/fff" alt="">
               <h6>Branding Designer</h6>
               <p class="name">Dionis Buga</p>
             </div>
-            <div class="flex-cell flex disable">
-              <img src="http://placehold.it/281x350" alt="">
+            <div class="col disable">
+              <img src="http://placehold.it/281x350/e9eaed/e9eaed" alt="">
               <h6>Interface Designer</h6>
               <p class="name">Rob Karnovski</p>
             </div>
-            <div class="flex-cell flex">
-              <img src="http://placehold.it/281x350" alt="">
+            <div class="col">
+              <img src="http://placehold.it/281x350/fff/fff" alt="">
               <h6>Photographer</h6>
               <p class="name">Danil Melekhin</p>
             </div>
-            <div class="flex-cell flex">
-              <img src="http://placehold.it/281x350" alt="">
+            <div class="col">
+              <img src="http://placehold.it/281x350/e9eaed/e9eaed" alt="">
               <h6>Lead Developer</h6>
               <p class="name">Markus Barño</p>
             </div>
           </div>
-          <div class="flex-row">
-            <div class="flex-cell flex">
+          <div class="grid-noGutter">
+            <div class="col">
               <img src="http://placehold.it/1124x560/000000/000000" alt="">
             </div>
           </div>
@@ -155,51 +212,99 @@
       </div>
       <div class="container">
         <h4 class="title-dot">What we do<span>.</span></h4>
-        <div class="flex-row">
-          <div class="flex-cell flex">
+        <div class="grid">
+          <div class="col-4">
             <h5>
               <span><i class="fa fa-apple"></i></span>
               Stragety & Planning
             </h5>
           </div>
-          <div class="flex-cell flex">
+          <div class="col-4">
             <h5>
               <span><i class="fa fa-apple"></i></span>
               Interface Design
             </h5>
           </div>
-          <div class="flex-cell flex">
+          <div class="col-4">
             <h5>
               <span><i class="fa fa-apple"></i></span>
               Augmented Reality
             </h5>
           </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-cell flex">
+          <div class="col-4">
             <h5>
               <span><i class="fa fa-apple"></i></span>
               iOS & Android
             </h5>
           </div>
-          <div class="flex-cell flex">
+          <div class="col-4">
             <h5>
               <span><i class="fa fa-apple"></i></span>
               Web & App solutions
             </h5>
           </div>
-          <div class="flex-cell flex">
+          <div class="col-4">
             <h5>
               <span><i class="fa fa-apple"></i></span>
               Branding & Identity
             </h5>
           </div>
         </div>
+        <div class="grid">
+          <div class="col-8">
+            <p>We are a UX design agency that believes that in-depth understanding of user’s needs is part of the design process. We dig deep to find solutions that work for your specific industry, and we do that by creating user interfaces that are clean, intuitive and consistent.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="col">
+            <img src="http://placehold.it/545x385/000/000" alt="">
+            <h6>Entertainment</h6>
+            <p>Twin — Online Gambling</p>
+          </div>
+          <div class="col-right">
+            <img src="http://placehold.it/545x385/000/000" alt="">
+            <h6>eCommerce / Delivery</h6>
+            <p>Savetime — Interface Design</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="col-right">
+            <a href="#">More cases <span><i class="fa fa-angle-right"></i></span></a>
+          </div>
+        </div>
+        <div class="bottom-layer">
+          <div class="grid-center">
+            <div class="col">
+              <h6>Next</h6>
+              <p>We Hiring</p>
+              <i class="fa fa-long-arrow-right"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </content>
   </div>
   <footer class="footer">
-    <div class="container"></div>
+    <div class="container">
+      <div class="css-grid">
+        <nav class="css-cell foot-menu">
+          <ul>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Story</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </nav>
+        <div class="css-cell logo-wrap">
+          <a class="foot-logo" href="/"><img src="./assets/img/main-logo.png" alt="logo"></a>
+        </div>
+        <nav class="css-cell foot-menu-right">
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </footer>
 
 </body>

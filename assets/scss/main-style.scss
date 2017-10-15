@@ -9,33 +9,43 @@
 .container{
   width: 1124px;
   margin: 0 auto;
-}
-
-.flex-row{
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  &.flex-align-space-between{
-    justify-content: space-between;
-    align-items: center;
+  box-sizing:border-box;
+  @media (max-width:1124px){
+    width: 100%;
+    padding: 0 50px;
   }
-  .flex-cell{
-    &.flex{
-      flex:1 1 100%;
-      
-    }
-    img{
-      max-width: 100%;
-    }
+  img{
+    max-width:100%;
   }
 }
 
-.grid-row{
-  // width: 100%;
-  display: grid;
-  grid-template-columns:1fr 1fr;
-  grid-template-rows: auto auto;
-}
+// .flex-row{
+//   display: -webkit-flex;
+//   display: -ms-flex;
+//   display: flex;
+//   &.flex-align-space-between{
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+//   .flex-cell{
+//     &.flex{
+//       flex:1 1 100%;
+//     }
+//     &.flex-50{
+//       flex:1 4 100%;
+//     }
+//     img{
+//       max-width: 100%;
+//     }
+//   }
+// }
+
+// .grid-row{
+//   // width: 100%;
+//   display: grid;
+//   grid-template-columns:1fr 1fr 2fr;
+//   grid-template-rows: auto;
+// }
 
 .text-right{
   text-align: right;
@@ -43,10 +53,18 @@
 
 header.header{
   padding: 61px 0 142px;
+  @media(max-width:600px){
+    padding: 30px 0 135px;
+  }
+  h1{
+  }
   a.logo{
-    line-height: 37px;
+    line-height: 18px;
     img{
       width: 108px;
+      @media(max-width:600px){
+        width: 90px;
+      }
     }
   }
   .menu-button{
@@ -56,10 +74,65 @@ header.header{
     color: #131313;
     border-bottom:1.5px solid #131313;
     cursor: pointer;
-    height: 20px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    @media(max-width:600px){
+      border-top:1.5px solid #131313;
+      height: 8px;
+      width: 20px;
+      bottom: 3px;
+      span{
+        display: none;
+      }
+    }
   }
+}
+
+.grey-color-block{
+  background: #f2f2f4;
 }
 
 footer.footer{
   height: 110px;
+  .foot-logo{
+    img{
+      width: 100px;
+    }
+  }
+  nav{
+    ul{
+      // display: flex;
+      li{
+        display: inline-block;
+        a{
+          font-family: 'Montserrat';
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 2.15;
+          letter-spacing: -0.2px;
+          color: #1f252c;
+        }
+      }
+    }
+  }
+  .css-grid{
+    display:grid;
+    grid-template-columns:repeat(12, 1fr);
+    grid-auto-rows: minmax(110px, auto);
+    .css-cell{
+      &.logo-wrap{
+        grid-column: 4 / 8;
+        grid-row: 1;
+      }
+      &.foot-menu{
+        grid-column: 1 / 4;
+        grid-row: 1;
+      }
+      &.foot-menu-right{
+        grid-column: 8 / 12;
+        grid-row: 1;
+      }
+    }
+  }
 }

@@ -46,6 +46,9 @@
 //   grid-template-columns:1fr 1fr 2fr;
 //   grid-template-rows: auto;
 // }
+.flex-self-center{
+  align-self:center;
+}
 
 .text-right{
   text-align: right;

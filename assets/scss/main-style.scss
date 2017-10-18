@@ -5,13 +5,17 @@
   min-height: 100vh;
   padding-bottom: 110px;
   margin-bottom: -110px;
+  @media(max-width:768px){
+    margin-bottom: -74px;
+    padding-bottom: 74px;
+  }
 }
 
 .container{
   width: 1124px;
   margin: 0 auto;
   box-sizing: border-box;
-  @media(max-width:1124px){
+  @media(max-width:1200px){
     width: 100%;
     padding: 0 50px;
   }
@@ -54,8 +58,11 @@
 
 header.header{
   padding: 61px 0 142px;
-  @media(max-width: 768px){
-    padding: 30px 0 135px;
+  @media(max-width: 1024px){
+    padding: 70px 0 155px;
+  }
+  @media(max-width: 568px){
+    padding: 30px 10px 135px;
   }
   a.logo{
     line-height: 37px;
@@ -96,10 +103,10 @@ header.header{
     font-family: "Open Sans";
     font-size: 20px;
     line-height: 1.7;
-    @media(max-width:1024px){
+    @media(max-width:768px){
       font-size: 18px;
     }
-    @media(max-width:768px){
+    @media(max-width:568px){
       font-size: 16px;
     }
   }
@@ -113,18 +120,31 @@ header.header{
   .top-ttl-layer{
     padding-bottom: 90px;
     @media(max-width: 768px){
-      padding-bottom: 20px;
+      padding-bottom: 34px;
+    }
+    @media(max-width: 768px){
+      padding-bottom: 34px;
+    }
+    @media(max-width: 568px){
+      padding: 0 12px 24px;
     }
     h4.title-dot{
       font-size: 44px;
       line-height: 54px;
       letter-spacing: -.8px;
       @media(max-width: 1024px){
+        font-size: 38px;
+        line-height: 1.26;
+        letter-spacing: -0.6px;
+      }
+      @media(max-width: 768px){
         font-size: 34px;
         line-height: 1.29;
         letter-spacing: -0.5px;
+        margin-bottom: 34px;
       }
-      @media(max-width: 1024px){
+      @media(max-width: 568px){
+        margin-bottom: 24px;
         font-size: 26px;
         line-height: 1.38;
         letter-spacing: -0.6px;
@@ -133,12 +153,26 @@ header.header{
         font-weight: 200;
       }
     }
+    .circle-link{
+      @media(max-width:768px){
+        display: none;
+      }
+    }
+    .show-sm{
+      display: inline-block;
+      @media(min-width:769px){
+        display: none;
+      }
+    }
   }
 
   .sub-layer{
     padding-bottom: 90px;
     @media(max-width: 768px){
-      padding-bottom: 60px;
+      padding-bottom: 44px;
+    }
+    @media(max-width: 568px){
+      padding: 0 12px 44px;
     }
     .sub-layer-block{
       @media(max-width: 768px){
@@ -167,6 +201,11 @@ header.header{
           line-height: 1;
           letter-spacing: -0.8px;
           margin-bottom: 8px;
+          @media(max-width: 768px){
+            font-size: 34px;
+            line-height: 1.29;
+            letter-spacing: -0.6px;
+          }
         }
         a{
           color: #299bc4;
@@ -216,17 +255,19 @@ header.header{
   }
 
   .negative-margin-block{
-    @media(min-width:1124px){
+    margin-bottom: -16px;
+    @media(min-width:1200px){
       margin-bottom: -120px;
     }
-    @media(max-width: 1024px){
-      padding-bottom: 100px;
+    @media(max-width: 568px){
+      p{
+        padding: 0 12px;
+      }
     }
     .img-wrap{
       @media(max-width: 768px){
         width: 100%;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 0;
       }
       img{
         @media(max-width: 768px){
@@ -239,8 +280,16 @@ header.header{
     }
     .message-us{
       padding-top: 76px;
+      padding-bottom: 20px;
       @media(max-width: 1024px){
         padding-top: 30px;
+      }
+      @media(max-width: 768px){
+        padding-top: 30px;
+        padding-bottom: 100px;
+      }
+      @media(max-width: 568px){
+        padding: 30px 12px 100px;
       }
     }
   }
@@ -267,16 +316,30 @@ header.header{
       padding-right: 20px;
       margin-bottom: 30px;
       @media(max-width: 1024px){
+        padding-right: 0;
+        font-size: 38px;
+        line-height: 1.26;
+        letter-spacing: -0.7px;
+        margin-bottom: 53px;
+      }
+      @media(max-width: 768px){
         font-size: 34px;
         line-height: 1.41;
         letter-spacing: -0.6px;
         margin-bottom: 10px;
       }
-      @media(max-width: 1024px){
+      @media(max-width: 568px){
         font-size: 26px;
         font-weight: 600;
         line-height: 1.54;
         letter-spacing: -0.5px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+      }
+      @media(max-width: 320px){
+        font-size: 22px;
+        line-height: 1.45;
+        letter-spacing: -0.4px;
       }
       span{
         font-size: 64px;
@@ -285,8 +348,11 @@ header.header{
         @media(max-width: 1024px){
           font-size: 54px;
         }
-        @media(max-width: 1024px){
+        @media(max-width: 768px){
           font-size: 46px;
+        }
+        @media(max-width: 568px){
+          font-size: 38px;
         }
       }
     }
@@ -298,17 +364,20 @@ header.header{
       letter-spacing: -0.3px;
       color: #9598a2;
       margin-bottom: 119px;
-      @media(max-width: 1024px){
+      @media(max-width: 768px){
         font-size: 14px;
         line-height: 2.5;
         letter-spacing: -0.2px;
         margin-bottom: 60px;
       }
-      @media(max-width: 768px){
+      @media(max-width: 568px){
         font-size: 12px;
         line-height: 1;
         letter-spacing: -0.2px;
         margin-bottom: 50px;
+      }
+      @media(max-width: 320px){
+        padding: 0 12px;
       }
     }
     .photo-block{
@@ -316,10 +385,14 @@ header.header{
         padding: 25px 10px 25px 20px;
         margin-bottom: 65px;
         @media(max-width: 1024px){
+          margin-bottom: 85px;
+        }
+        @media(max-width: 768px){
           margin-bottom: 35px;
         }
         @media(max-width: 568px){
           padding: 15px 10px;
+          margin-bottom: 15px;
         }
         @media(max-width: 320px){
           text-align: center;
@@ -342,9 +415,9 @@ header.header{
         p.name{
           font-family: "Montserrat";
           text-transform: uppercase;
-          font-size: 15px;
+          font-size: 18px;
           font-weight: 500;
-          line-height: 2.33;
+          line-height: 1.94;
           letter-spacing: -0.3px;
           @media(max-width: 768px){
             font-size: 14px;
@@ -367,6 +440,21 @@ header.header{
       .long-photo{
         @media(max-width: 768px){
           margin-bottom: 30px;
+        }
+      }
+      &.first-photo{
+        p.name{
+          font-size: 15px;
+          line-height: 2.33;
+          @media(max-width: 768px){
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: -0.2px;
+          }
+          @media(max-width: 375px){
+            font-size: 13px;
+            line-height: 1;
+          }
         }
       }
     }
@@ -400,19 +488,47 @@ header.header{
       padding-top: 312px;
     }
     @media(max-width: 768px){
-      padding-bottom: 100px;
+      padding-bottom: 150px;
       padding-top: 260px;
     }
     @media(max-width: 568px){
+      padding-bottom: 100px;
       padding-top: 200px;
     }
     @media(max-width: 375px){
       padding-top: 170px;
     }
+    .title-dot{
+      @media(max-width: 1024px){
+        margin-bottom: 40px;
+      }
+      @media(max-width: 768px){
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.47;
+        letter-spacing: -0.5px;
+      }
+      @media(max-width: 568px){
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.45;
+        letter-spacing: -0.3px;
+        margin-bottom: 35px;
+        padding: 0 10px;
+      }
+    }
     .what-we-do-inner{
       padding-bottom: 35px;
+      @media(max-width: 1024px){
+        padding-bottom: 60px;
+      }
       @media(max-width: 568px){
-        padding-bottom: 20px;
+        padding: 0 10px 35px;
+      }
+    }
+    .txt-inner{
+      @media(max-width: 568px){
+        padding: 0 10px;
       }
     }
     h5{
@@ -422,17 +538,27 @@ header.header{
       display: flex;
       align-items: center;
       flex-wrap: nowrap;
+      @media(max-width: 1024px){
+        padding: 30px 0 30px 30px;
+      }
       @media(max-width: 768px){
+        padding: 20px 0 20px 28px;
+      }
+      @media(max-width: 568px){
         padding: 15px 0;
       }
       span{
         &:not(.icon-wrap){
           font-family: "Montserrat";
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 500;
-          line-height: 1.75;
+          line-height: 1.56;
           letter-spacing: -0.3px;
           text-transform: uppercase;
+          @media(max-width: 1280px){
+            font-size: 16px;
+            line-height: 1.75;
+          }
         }
         &.icon-wrap{
           width: 80px;
@@ -448,7 +574,7 @@ header.header{
             min-width: 60px;
           }
           i{
-            font-size: 34px;
+            font-size: 38px;
             line-height: 80px;
             @media(max-width: 1024px){
               line-height: 60px;
@@ -466,15 +592,18 @@ header.header{
         padding-bottom: 0;
         padding-top: 80px;
       }
-      @media(max-width: 768px){
+      @media(max-width: 568px){
         padding-top: 64px;
-        padding-bottom: 4px;
+        padding-bottom: 10px;
       }
       @media(max-width: 568px){
       }
       .left-block{
         padding-top: 140px;
         @media(max-width: 768px){
+          padding-top: 70px;
+        }
+        @media(max-width: 568px){
           padding-top: 0;
         }
       }
@@ -493,10 +622,14 @@ header.header{
           line-height: 1.5;
           color: #9598a2;
           margin-bottom: 13px;
-          @media(max-width: 1024px){
+          @media(max-width: 768px){
             font-size: 14px;
             line-height: 1.71;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
+          }
+          @media(max-width: 568px){
+            font-size: 12px;
+            line-height: 1;
           }
         }
         h4{
@@ -506,8 +639,21 @@ header.header{
           line-height: 1.36;
           color: #111111;
           @media(max-width: 1024px){
+            font-size: 22px;
+            line-height: 1.45;
+            font-weight: 500;
+          }
+          @media(max-width: 768px){
             font-size: 18px;
             line-height: 1.56;
+          }
+          @media(max-width: 568px){
+            font-size: 16px;
+            line-height: 1.63;
+          }
+          @media(max-width: 320px){
+            font-size: 14px;
+            line-height: 1.71;
           }
         }
       }
@@ -516,11 +662,14 @@ header.header{
 
   .bottom-layer{
     padding: 80px 0;
-    @media(max-width: 1280px){
+    @media(max-width: 1024px){
       box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.12);
       border-top:1px solid #e7e7e7;
     }
     @media(max-width: 768px){
+      padding: 105px 0;
+    }
+    @media(max-width: 568px){
       padding: 70px 0;
     }
     p{
@@ -540,6 +689,11 @@ header.header{
       text-align: center;
       color: #111111;
       margin: 30px 0;
+      @media(max-width: 568px){
+        font-size: 26px;
+        line-height: 1.96;
+        margin: 20px 0 14px;
+      }
     }
     i{
       font-size: 20px;
@@ -560,6 +714,9 @@ footer.footer{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff', GradientType=0 );
   .footer-inner{
     height: 110px;
+    @media(max-width:768px){
+      height: 74px;
+    }
     @media(max-width:568px){
       text-align: center;
       height: 165px;

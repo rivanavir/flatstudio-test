@@ -23,6 +23,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.flat-line-arrow-right:before {
+  content: "\e903";
+}
+.flat-ios-android:before {
+  content: "\e907";
+}
 .flat-media:before {
   content: "\e900";
 }
@@ -31,9 +37,6 @@
 }
 .flat-interface:before {
   content: "\e902";
-}
-.flat-ios-android:before {
-  content: "\e907";
 }
 .flat-strategy:before {
   content: "\e904";
